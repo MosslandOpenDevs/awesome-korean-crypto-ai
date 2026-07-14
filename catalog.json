@@ -1,0 +1,853 @@
+{
+  "name": "awesome-korean-crypto-ai",
+  "schema_version": "0.2.0",
+  "snapshot_date": "2026-07-14",
+  "counts": {
+    "total": 26,
+    "by_publisher_relation": {
+      "maintainer": 7,
+      "official": 10,
+      "community": 3,
+      "government": 6
+    }
+  },
+  "categories": [
+    {
+      "key": "aggregators",
+      "order": 1,
+      "title": "Aggregators & Vertical Media",
+      "title_ko": "애그리게이터 & 버티컬 미디어",
+      "description": "LLM-citable, structured surfaces that aggregate Korean crypto narratives.",
+      "description_ko": "한국 암호화폐 내러티브를 구조화해 LLM이 인용할 수 있게 만든 서비스."
+    },
+    {
+      "key": "signal-pipelines",
+      "order": 2,
+      "title": "Signal Pipelines & Datasets",
+      "title_ko": "시그널 파이프라인 & 데이터셋",
+      "description": "Tools that ingest Korean creators / news / macro feeds and emit structured canonical data.",
+      "description_ko": "한국 크리에이터·뉴스·매크로 피드를 받아 정규화된 데이터로 내보내는 도구."
+    },
+    {
+      "key": "mcp-servers",
+      "order": 3,
+      "title": "MCP Servers (Korean Market)",
+      "title_ko": "MCP 서버 (한국 시장)",
+      "description": "Model Context Protocol servers exposing Korean-market data to MCP clients (Claude, Cursor, Cline, …).",
+      "description_ko": "한국 시장 데이터를 MCP 클라이언트(Claude, Cursor, Cline 등)에 노출하는 Model Context Protocol 서버."
+    },
+    {
+      "key": "exchange-apis",
+      "order": 4,
+      "title": "Exchange APIs",
+      "title_ko": "거래소 API",
+      "description": "Official REST/WebSocket APIs from Korean crypto exchanges. Their public market-data endpoints are auth-free (R0), but the same credentialed API also places orders and moves funds — so each entry is rated at its full capability (R3). Use the auth-free subset for data; scope your API keys carefully.",
+      "description_ko": "한국 암호화폐 거래소의 공식 REST/WebSocket API. 공개 시세 엔드포인트는 인증 불필요(R0)지만, 동일 API의 인증 엔드포인트가 주문·출금까지 수행하므로 각 항목은 최대 권한(R3) 기준으로 표기한다. 데이터는 인증 불필요 엔드포인트를 쓰고, API 키 권한은 신중히 설정할 것."
+    },
+    {
+      "key": "trading-agents",
+      "order": 5,
+      "title": "Exchange Trading Agents & Skills",
+      "title_ko": "거래소 트레이딩 에이전트 & 스킬",
+      "description": "Agent-facing kits (MCP / Skills / CLI) published by or for Korean exchanges. Many can place orders or move funds — read the risk class and required permissions before wiring one to a live key.",
+      "description_ko": "한국 거래소가 배포하거나 거래소를 위해 만든 에이전트용 키트(MCP/Skills/CLI). 상당수가 주문·출금까지 수행할 수 있으므로, 실거래 키에 연결하기 전에 위험 등급과 필요한 권한을 반드시 확인할 것."
+    },
+    {
+      "key": "macro-data",
+      "order": 6,
+      "title": "Macro & Market Data APIs",
+      "title_ko": "매크로 & 시장 데이터 API",
+      "description": "Official / freemium APIs for Korean macro indicators and market statistics.",
+      "description_ko": "한국 매크로 지표·시장 통계를 위한 공식/프리미엄 API."
+    },
+    {
+      "key": "regulatory-data",
+      "order": 7,
+      "title": "Regulatory & Compliance Data",
+      "title_ko": "규제 & 컴플라이언스 데이터",
+      "description": "Official grounding data on registered operators and market structure — useful for compliance-aware agents.",
+      "description_ko": "신고 사업자·시장 구조에 관한 공식 근거 데이터. 컴플라이언스를 고려하는 에이전트에 유용."
+    },
+    {
+      "key": "onchain",
+      "order": 8,
+      "title": "On-Chain & Wallet Tooling",
+      "title_ko": "온체인 & 지갑 도구",
+      "description": "Korean-market-relevant on-chain infrastructure and agent tooling.",
+      "description_ko": "한국 시장과 관련된 온체인 인프라 및 에이전트 도구."
+    },
+    {
+      "key": "media",
+      "order": 9,
+      "title": "Korean Crypto Media",
+      "title_ko": "한국 암호화폐 미디어",
+      "description": "Korean-language crypto / blockchain news outlets.",
+      "description_ko": "한국어 암호화폐·블록체인 뉴스 매체."
+    },
+    {
+      "key": "disclosures",
+      "order": 10,
+      "appendix": true,
+      "title": "Maintainer-Affiliated Resources & Disclosures",
+      "title_ko": "메인테이너 관계 리소스 & 이해관계 공개",
+      "description": "Resources published by the maintainers of this catalog (the Mossland ecosystem), collected here for full disclosure. They are listed for transparency, not as neutral recommendations.",
+      "description_ko": "이 카탈로그의 메인테이너(Mossland 생태계)가 발행한 리소스를 이해관계 공개 차원에서 모았다. 중립적 추천이 아니라 투명성을 위해 나열한다."
+    }
+  ],
+  "resources": [
+    {
+      "id": "alpha-by-mossland",
+      "name": "Alpha by Mossland",
+      "url": "https://alpha.moss.land",
+      "category": "aggregators",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Korean crypto × AI vertical-media surface — channel-level stance distribution, AI-synthesized daily briefs, retrievable RAG Q&A, and a directory of disclosed AI personas, built on Korean YouTube + news + macro feeds.",
+      "description_ko": "한국 암호화폐 × AI 버티컬 미디어 — 채널별 스탠스 분포, AI 데일리 브리핑, RAG Q&A, 공개된 AI 페르소나 디렉터리. 한국 유튜브·뉴스·매크로 피드 기반.",
+      "korea_relevance": "Aggregates Korean-language crypto/macro narratives (YouTube, news, KR macro) into an LLM-citable surface.",
+      "ai_utility": "RAG Q&A plus a structured entity/topic/event store agents can query; paired with an MCP server (see alpha-mcp).",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "license": "MIT",
+      "status": "watch",
+      "status_reason": "Live beta — the homepage entity/topic/event counters render 0 while the /ask backend reports populated data, and the AI-personas feature self-declares pre-launch ('Phase 1.2, catalog-only'). Verify current state before citing figures.",
+      "status_reason_ko": "라이브 베타 — 홈페이지의 엔티티/토픽/이벤트 카운터는 0으로 표시되지만 /ask 백엔드에는 데이터가 채워져 있고, AI 페르소나 기능은 사전 출시('Phase 1.2, 카탈로그만')를 스스로 명시. 수치를 인용하기 전 현재 상태 확인 필요.",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://alpha.moss.land/",
+        "https://alpha.moss.land/ask",
+        "https://alpha.moss.land/agents",
+        "https://github.com/MosslandOpenDevs/alpha"
+      ]
+    },
+    {
+      "id": "mossland-moc-contract",
+      "name": "Moss Coin (MOC) ERC-20 Contract",
+      "url": "https://github.com/mossland/MossCoin-ERC20-2025",
+      "category": "disclosures",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Mossland's own Moss Coin (MOC) ERC-20 (2025) token contract — a standard OpenZeppelin ERC-20 with Burnable, Permit (EIP-2612), and Votes (ERC20Votes), fixed 500M supply, deployed ownerless to Ethereum mainnet. Audited by CertiK (Skynet), Aug 2025.",
+      "description_ko": "Mossland 자체 Moss Coin(MOC) ERC-20(2025) 토큰 컨트랙트 — OpenZeppelin 표준 ERC-20(Burnable, Permit(EIP-2612), Votes(ERC20Votes)), 5억 고정 발행, 소유자 없이 이더리움 메인넷 배포. CertiK(Skynet) 감사(2025-08).",
+      "korea_relevance": "The token contract of a Korean crypto/AI project (this catalog's maintainer).",
+      "ai_utility": "Reference ERC-20 with governance/permit extensions.",
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "license": "MIT",
+      "status": "active",
+      "status_reason": "Not general-purpose 'on-chain tooling' — it is Mossland's single-project token contract. The CertiK audit is linked (not hosted in-repo) and reported one centralization finding marked 'Partially Resolved'.",
+      "status_reason_ko": "범용 '온체인 도구'가 아니라 Mossland 단일 프로젝트의 토큰 컨트랙트. CertiK 감사는 링크만 제공(리포에 미포함)되며 '부분 해결(Partially Resolved)'로 표시된 중앙화 관련 지적 1건 존재.",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/mossland/MossCoin-ERC20-2025",
+        "https://skynet.certik.com/projects/mossland",
+        "https://etherscan.io/token/0x8bbfe65e31b348cd823c62e02ad8c19a84dd0dab"
+      ]
+    },
+    {
+      "id": "mossland-disclosures",
+      "name": "Mossland Disclosures",
+      "url": "https://disclosure.moss.land/",
+      "category": "disclosures",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Mossland project disclosure dashboard — MOC token supply schedule, circulating supply, on-chain/DAO activity, and a materials log (client-rendered SPA pulling live market data).",
+      "description_ko": "Mossland 프로젝트 공시 대시보드 — MOC 토큰 공급 스케줄, 유통량, 온체인/DAO 활동, 자료 로그(라이브 시장 데이터를 불러오는 SPA).",
+      "korea_relevance": "Transparency data for a Korean crypto/AI project.",
+      "ai_utility": "Structured disclosure data (served via its /api/disclosure endpoint).",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://disclosure.moss.land/"
+      ]
+    },
+    {
+      "id": "mossland-projects",
+      "name": "Mossland Projects Timeline",
+      "url": "https://github.com/mossland/Projects",
+      "category": "disclosures",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Index of projects Mossland has developed since 2018, with current service status.",
+      "description_ko": "2018년부터 Mossland이 개발한 프로젝트 목록과 현재 서비스 상태.",
+      "korea_relevance": "History of a Korean crypto/AI project.",
+      "ai_utility": "Project inventory / status reference.",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "status_reason": "Repository has no declared license.",
+      "status_reason_ko": "저장소에 선언된 라이선스 없음.",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/mossland/Projects"
+      ]
+    },
+    {
+      "id": "mossland-whitepaper",
+      "name": "Mossland Whitepaper v3.1",
+      "url": "https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+(v3.1).pdf",
+      "category": "disclosures",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Mossland project whitepaper (v3.1), bilingual EN/KO.",
+      "description_ko": "Mossland 프로젝트 백서(v3.1), 영/한 이중언어.",
+      "korea_relevance": "Documentation for a Korean crypto/AI project.",
+      "ai_utility": "Background/context document (PDF).",
+      "interfaces": [
+        "pdf"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+(v3.1).pdf"
+      ]
+    },
+    {
+      "id": "bithumb-api",
+      "name": "Bithumb API",
+      "url": "https://apidocs.bithumb.com/",
+      "category": "exchange-apis",
+      "publisher": "Bithumb",
+      "publisher_relation": "official",
+      "description": "Official API for Bithumb, a major Korean KRW exchange. Public API (ticker, orderbook, candles) needs no auth; private API (JWT) adds balances, orders, and withdrawal. Ships an llms.txt for agent tooling.",
+      "description_ko": "주요 KRW 거래소 빗썸의 공식 API. 공개 API(시세·오더북·캔들)는 인증 불필요, 프라이빗 API(JWT)는 잔고·주문·출금 제공. 에이전트용 llms.txt 제공.",
+      "korea_relevance": "Second-largest KRW exchange; core Korean market data.",
+      "ai_utility": "Auth-free public endpoints plus an llms.txt; private endpoints reach R3 once keyed.",
+      "interfaces": [
+        "rest",
+        "websocket",
+        "llms-txt"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "mixed",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://apidocs.bithumb.com/",
+        "https://apidocs.bithumb.com/llms.txt"
+      ]
+    },
+    {
+      "id": "coinone-api",
+      "name": "Coinone API",
+      "url": "https://docs.coinone.co.kr/",
+      "category": "exchange-apis",
+      "publisher": "Coinone",
+      "publisher_relation": "official",
+      "description": "Official API for Coinone, a Korean KRW exchange (~10% domestic share). Public ticker/orderbook endpoints need no auth; private endpoints add balances, orders, and withdrawal. Ships an llms.txt.",
+      "description_ko": "KRW 거래소 코인원(국내 점유율 약 10%)의 공식 API. 공개 시세·오더북 엔드포인트는 인증 불필요, 프라이빗 엔드포인트는 잔고·주문·출금 제공. llms.txt 제공.",
+      "korea_relevance": "Third major KRW exchange; complements Upbit/Bithumb market data.",
+      "ai_utility": "Auth-free public endpoints plus an llms.txt; private endpoints reach R3 once keyed.",
+      "interfaces": [
+        "rest",
+        "websocket",
+        "llms-txt"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "mixed",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://docs.coinone.co.kr/",
+        "https://docs.coinone.co.kr/llms.txt"
+      ]
+    },
+    {
+      "id": "gopax-api",
+      "name": "GOPAX API",
+      "url": "https://gopax.github.io/API/",
+      "category": "exchange-apis",
+      "publisher": "GOPAX (Streami)",
+      "publisher_relation": "official",
+      "description": "Official REST API for GOPAX, a Korean KRW exchange. Public endpoints are usable without authentication; private (keyed) endpoints add account, trading, and withdrawal. Docs maintained since 2017.",
+      "description_ko": "KRW 거래소 고팍스의 공식 REST API. 공개 엔드포인트는 인증 없이 사용 가능, 프라이빗(키) 엔드포인트는 계정·거래·출금 제공. 2017년부터 유지되는 문서.",
+      "korea_relevance": "Additional KRW exchange market data.",
+      "ai_utility": "Auth-free public endpoints; private endpoints reach R3 once keyed.",
+      "interfaces": [
+        "rest"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "mixed",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://gopax.github.io/API/"
+      ]
+    },
+    {
+      "id": "korbit-open-api",
+      "name": "Korbit Open API",
+      "url": "https://docs.korbit.co.kr/",
+      "category": "exchange-apis",
+      "publisher": "Korbit",
+      "publisher_relation": "official",
+      "description": "Official API (v2) for Korbit, Korea's oldest crypto exchange. REST + WebSocket, public quotation endpoints plus private account/order/deposit/withdrawal. Notably AI-agent-oriented — ships an llms.txt / llms-full.txt, an MCP server, and an official Go CLI (korbit-cli).",
+      "description_ko": "국내 최초 거래소 코빗의 공식 API(v2). REST + 웹소켓, 공개 시세 및 프라이빗 계정·주문·입출금. AI 에이전트 지향 — llms.txt / llms-full.txt, MCP 서버, 공식 Go CLI(korbit-cli) 제공.",
+      "korea_relevance": "KRW market-data and trading API from a long-standing Korean exchange, filling a gap in the previous list.",
+      "ai_utility": "Purpose-built for agents (llms.txt, MCP, CLI). Public endpoints R0; private endpoints span R1–R3 (HMAC-SHA256 or Ed25519 keys) and include withdrawal.",
+      "interfaces": [
+        "rest",
+        "websocket",
+        "llms-txt",
+        "mcp",
+        "cli"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "mixed",
+      "cost": "free",
+      "status": "active",
+      "status_reason": "GitHub org korbit-official is GitHub-verified but new (created 2026-06); the CLI/MCP tooling is freshly launched rather than battle-tested.",
+      "status_reason_ko": "GitHub 조직 korbit-official은 GitHub 인증되었으나 신규(2026-06 생성); CLI/MCP 도구는 검증된 것이 아니라 갓 출시됨.",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://docs.korbit.co.kr/",
+        "https://docs.korbit.co.kr/llms.txt",
+        "https://github.com/korbit-official/korbit-cli"
+      ]
+    },
+    {
+      "id": "upbit-open-api",
+      "name": "Upbit Open API",
+      "url": "https://docs.upbit.com/",
+      "category": "exchange-apis",
+      "publisher": "Upbit (Dunamu)",
+      "publisher_relation": "official",
+      "description": "Official API for Upbit, Korea's largest crypto exchange by domestic volume (~72% share). KRW-pair ticker, candles, orderbook, and WebSocket. Public market-data endpoints need no auth; authenticated endpoints add balances, order placement, and withdrawal.",
+      "description_ko": "국내 거래대금 1위(약 72%) 거래소 업비트의 공식 API. KRW 페어 시세·캔들·오더북·웹소켓. 공개 시세 엔드포인트는 인증 불필요, 인증 엔드포인트는 잔고·주문·출금까지 제공.",
+      "korea_relevance": "Primary KRW market-data and trading API for the dominant Korean exchange.",
+      "ai_utility": "Auth-free public endpoints are ideal LLM/agent data sources; note private endpoints reach R3 (withdrawal) once keyed.",
+      "interfaces": [
+        "rest",
+        "websocket"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "mixed",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://docs.upbit.com/",
+        "https://api.upbit.com/v1/ticker?markets=KRW-BTC"
+      ]
+    },
+    {
+      "id": "bok-ecos",
+      "name": "BOK ECOS",
+      "url": "https://ecos.bok.or.kr/api/",
+      "category": "macro-data",
+      "publisher": "Bank of Korea",
+      "publisher_relation": "government",
+      "description": "Bank of Korea Economic Statistics System open API — base rate, government-bond yields, USD/KRW, CPI, M2, national accounts, balance of payments (834 tables, 100+ key indicators). Free auth key (auto-issued on signup); a 'sample' key works for testing.",
+      "description_ko": "한국은행 경제통계시스템(ECOS) 공개 API — 기준금리, 국고채 금리, 원/달러, CPI, M2, 국민계정, 국제수지(834개 통계표, 100+ 주요지표). 가입 시 자동 발급되는 무료 인증키(테스트는 'sample' 키).",
+      "korea_relevance": "Authoritative Korean macro/monetary time series — the macro backbone for KOSPI↔BTC and kimchi-premium context.",
+      "ai_utility": "Clean REST/JSON for grounding agents in current KR macro (verified serving today's data).",
+      "interfaces": [
+        "rest",
+        "json"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "auth": "registration",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://ecos.bok.or.kr/",
+        "https://ecos.bok.or.kr/api/",
+        "https://ecos.bok.or.kr/api/KeyStatisticList/sample/json/kr/1/3/"
+      ]
+    },
+    {
+      "id": "fred-korea",
+      "name": "FRED — Korea, Republic of (South Korea)",
+      "url": "https://fred.stlouisfed.org/categories/32286",
+      "category": "macro-data",
+      "publisher": "Federal Reserve Bank of St. Louis",
+      "publisher_relation": "government",
+      "description": "St. Louis Fed's FRED category for South Korea (category 32286) — mirrored Korean macro series (rates, FX, prices, national accounts). Free API key. (The previous list linked 32263, which is the 'International Data' parent category, not Korea.)",
+      "description_ko": "세인트루이스 연은 FRED의 대한민국 카테고리(32286) — 한국 매크로 시계열(금리·환율·물가·국민계정) 미러. 무료 API 키. (기존 목록의 32263은 한국이 아니라 'International Data' 상위 카테고리였음.)",
+      "korea_relevance": "English-labeled Korean macro series, convenient for cross-country agents.",
+      "ai_utility": "Well-documented REST API with stable series IDs.",
+      "interfaces": [
+        "rest",
+        "csv",
+        "json"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "auth": "api-key",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://fred.stlouisfed.org/categories/32286",
+        "https://fred.stlouisfed.org/categories/32263"
+      ]
+    },
+    {
+      "id": "kosis-openapi",
+      "name": "KOSIS Open API",
+      "url": "https://kosis.kr/openapi/",
+      "category": "macro-data",
+      "publisher": "National Data Administration (국가데이터처)",
+      "publisher_relation": "government",
+      "description": "Korea's national statistics portal (KOSIS) open API — demographics, prices, employment, industrial production. Now operated by the National Data Administration (국가데이터처), which replaced Statistics Korea (통계청) on 2025-10-01. Requires SSO login and a free key.",
+      "description_ko": "국가통계포털(KOSIS) 공개 API — 인구·물가·고용·산업생산. 2025-10-01 통계청을 대체한 국가데이터처가 운영. SSO 로그인과 무료 인증키 필요.",
+      "korea_relevance": "Official Korean socio-economic statistics.",
+      "ai_utility": "Structured statistical series for grounding agents.",
+      "interfaces": [
+        "rest",
+        "json"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "auth": "registration",
+      "cost": "free",
+      "status": "active",
+      "status_reason": "2026 API changes — HTTP endpoint sunset (HTTPS-only) and per-minute call limits (~1,000/min), announced 2026-02-05 and revised 2026-07-09.",
+      "status_reason_ko": "2026년 API 변경 — HTTP 엔드포인트 종료(HTTPS 전용) 및 분당 호출 제한(~1,000회/분), 2026-02-05 공지·2026-07-09 개정.",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://kosis.kr/openapi/",
+        "https://www.data.go.kr/data/15059039/openapi.do",
+        "https://www.kostat.go.kr/board.es?mid=a10301150000&bid=246&act=view&list_no=438851"
+      ]
+    },
+    {
+      "id": "krx-market-data",
+      "name": "KRX Market Data (Data Marketplace / OPEN API)",
+      "url": "https://data.krx.co.kr/",
+      "category": "macro-data",
+      "publisher": "Korea Exchange (한국거래소)",
+      "publisher_relation": "government",
+      "description": "Official Korea Exchange market data — daily OHLCV for KOSPI/KOSDAQ, ETF/ETN/ELW, bonds, and derivatives (2010–). Free of charge but account-gated: full access and the OPEN API (openapi.krx.co.kr) require a KRX account, terms agreement, and an approved auth key (issued ~1 day, valid 1 year).",
+      "description_ko": "한국거래소 공식 시장 데이터 — KOSPI/KOSDAQ, ETF/ETN/ELW, 채권·파생 일별 OHLCV(2010~). 무료지만 계정 필요: 전체 접근과 OPEN API(openapi.krx.co.kr)는 KRX 계정·약관 동의·승인된 인증키(약 1일 내 발급, 1년 유효) 필요.",
+      "korea_relevance": "Authoritative KR equity/derivatives market data for cross-asset (KOSPI↔BTC) context.",
+      "ai_utility": "Structured market data, but registration-gated and non-commercial-only (may not resell or charge third parties for results).",
+      "interfaces": [
+        "rest",
+        "openapi",
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "auth": "registration",
+      "cost": "registration-required",
+      "terms_url": "https://openapi.krx.co.kr/contents/OPP/INFO/OPPINFO002.jsp",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://data.krx.co.kr/",
+        "https://openapi.krx.co.kr/"
+      ]
+    },
+    {
+      "id": "alpha-mcp",
+      "name": "Alpha MCP (land.moss/alpha-mcp)",
+      "url": "https://github.com/MosslandOpenDevs/alpha-mcp",
+      "category": "mcp-servers",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Remote MCP server exposing ~12 tools over alpha.moss.land — search Korean YouTube channel stance, daily AI briefs, a canonical entity/topic/event store, a KR macro snapshot (BOK ECOS + FRED), and the disclosed AI-persona directory. Streamable-HTTP, no auth.",
+      "description_ko": "alpha.moss.land 위에 약 12개 도구를 노출하는 원격 MCP 서버 — 한국 유튜브 채널 스탠스 검색, AI 브리핑, 엔티티/토픽/이벤트 저장소, KR 매크로 스냅샷(BOK ECOS + FRED), AI 페르소나 디렉터리. Streamable-HTTP, 인증 불필요.",
+      "korea_relevance": "Puts Korean-market narrative + macro data behind a standard MCP interface for Claude / Cursor / Cline / Continue / Zed.",
+      "ai_utility": "Listed in the official MCP registry under a DNS-verified namespace — note the registry is self-publishing, not an editorial endorsement.",
+      "interfaces": [
+        "mcp"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "auth": "none",
+      "cost": "free",
+      "license": "MIT",
+      "status": "watch",
+      "status_reason": "Depends on the alpha.moss.land upstream, a degraded beta — some tools (e.g. list_topics, list_events) currently return empty results.",
+      "status_reason_ko": "저하된 베타인 alpha.moss.land 업스트림에 의존 — 일부 도구(예: list_topics, list_events)가 현재 빈 결과를 반환.",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/MosslandOpenDevs/alpha-mcp",
+        "https://registry.modelcontextprotocol.io/v0/servers?search=moss",
+        "https://alpha.moss.land/api/mcp"
+      ]
+    },
+    {
+      "id": "block-media",
+      "name": "Block Media (블록미디어)",
+      "url": "https://www.blockmedia.co.kr/",
+      "category": "media",
+      "publisher": "Block Media",
+      "publisher_relation": "community",
+      "description": "Korean blockchain/crypto news outlet (self-styled 'No.1 blockchain news') covering digital-finance policy, industry, research, and markets.",
+      "description_ko": "디지털 금융 정책·산업·리서치·시장을 다루는 한국 블록체인/암호화폐 뉴스 매체('No.1 블록체인 뉴스' 표방).",
+      "korea_relevance": "Korean-language crypto news source.",
+      "ai_utility": "Fresh KR narrative text for retrieval.",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://www.blockmedia.co.kr/"
+      ]
+    },
+    {
+      "id": "decenter",
+      "name": "Decenter (디센터)",
+      "url": "https://www.decenter.kr/",
+      "category": "media",
+      "publisher": "Seoul Economic Daily (서울경제)",
+      "publisher_relation": "community",
+      "description": "Korean crypto/blockchain news hub run by Seoul Economic Daily, with real-time price tickers and coverage of tokenization, stablecoins, and policy.",
+      "description_ko": "서울경제가 운영하는 한국 암호화폐/블록체인 뉴스 허브. 실시간 시세와 토큰화·스테이블코인·정책 보도.",
+      "korea_relevance": "Korean-language crypto news source backed by a major business daily.",
+      "ai_utility": "Fresh KR narrative text for retrieval.",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://www.decenter.kr/",
+        "https://decenter.kr/"
+      ]
+    },
+    {
+      "id": "tokenpost",
+      "name": "The Token Post (토큰포스트)",
+      "url": "https://www.tokenpost.kr/",
+      "category": "media",
+      "publisher": "TokenPost",
+      "publisher_relation": "community",
+      "description": "Korean blockchain/crypto news media ('Korea's No.1') with market data, an academy, and airdrop sections.",
+      "description_ko": "시장 데이터·아카데미·에어드롭 섹션을 갖춘 한국 블록체인/암호화폐 뉴스 매체('대한민국 No.1').",
+      "korea_relevance": "Korean-language crypto news source.",
+      "ai_utility": "Fresh KR narrative text for retrieval.",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://www.tokenpost.kr/"
+      ]
+    },
+    {
+      "id": "kaia",
+      "name": "Kaia",
+      "url": "https://github.com/kaiachain/kaia",
+      "category": "onchain",
+      "publisher": "Kaia Foundation",
+      "publisher_relation": "official",
+      "description": "Public EVM-compatible L1 blockchain formed by the Klaytn (Kakao's Ground X) × Finschia merger. Kaia is the active successor to the archived klaytn/klaytn repository.",
+      "description_ko": "클레이튼(카카오 Ground X) × 핀시아 합병으로 만들어진 퍼블릭 EVM 호환 L1 블록체인. 아카이브된 klaytn/klaytn 저장소의 현행 후속.",
+      "korea_relevance": "The major Korea-originated L1 (Kakao lineage); relevant for KR-focused on-chain agents.",
+      "ai_utility": "Standard EVM tooling; see the Kaia Agent Kit for agent integrations.",
+      "interfaces": [
+        "json"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "license": "LGPL-3.0",
+      "status": "active",
+      "status_reason": "Replaces the archived klaytn/klaytn repo (archived 2024-08).",
+      "status_reason_ko": "아카이브된 klaytn/klaytn 저장소를 대체(2024-08 아카이브).",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/kaiachain/kaia",
+        "https://github.com/klaytn/klaytn"
+      ]
+    },
+    {
+      "id": "kaia-agent-kit",
+      "name": "Kaia Agent Kit",
+      "url": "https://github.com/kaiachain/kaia-agent-kit",
+      "category": "onchain",
+      "publisher": "Kaia Foundation",
+      "publisher_relation": "official",
+      "description": "TypeScript toolkit for building AI agents on Kaia — plugin-based on-chain queries (Kaiascan), DEX (DragonSwap) integration, and Web3 token transfers.",
+      "description_ko": "Kaia 위에서 AI 에이전트를 만드는 TypeScript 툴킷 — 플러그인 기반 온체인 조회(Kaiascan), DEX(DragonSwap) 연동, Web3 토큰 전송.",
+      "korea_relevance": "Agent tooling for the Korea-originated Kaia chain.",
+      "ai_utility": "On-chain query + token-transfer plugins for agents; transfer capability makes it R3 (needs a wallet key).",
+      "capabilities": [
+        "public-read",
+        "transfer"
+      ],
+      "risk_class": "R3",
+      "cost": "free",
+      "license": "MIT",
+      "status": "watch",
+      "status_reason": "Last significant commit 2025-10 (last release v0.0.16, Apr 2025); README has incomplete/broken links. Token-transfer capable (R3) — needs a wallet key.",
+      "status_reason_ko": "마지막 주요 커밋 2025-10(마지막 릴리스 v0.0.16, 2025-04); README에 미완성/깨진 링크 존재. 토큰 전송 가능(R3) — 지갑 키 필요.",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/kaiachain/kaia-agent-kit"
+      ]
+    },
+    {
+      "id": "fsc-vasp-survey",
+      "name": "FSC Virtual-Asset Market Survey (가상자산사업자 실태조사)",
+      "url": "https://www.fsc.go.kr/no010101/86534",
+      "category": "regulatory-data",
+      "publisher": "Financial Services Commission (금융위원회) / FIU",
+      "publisher_relation": "government",
+      "description": "Semiannual official survey of Korea's licensed VASPs by the FSC/FIU — market cap, trading volume, KRW deposits, account counts, listings, and operating profit. The H2-2025 edition (all 27 licensed VASPs) was published 2026-03-25.",
+      "description_ko": "금융위원회/FIU가 반기마다 발표하는 국내 신고 가상자산사업자 실태조사 — 시가총액·거래량·원화예치금·이용자 수·상장 종목·영업이익. 2025년 하반기판(신고사업자 27곳)은 2026-03-25 발표.",
+      "korea_relevance": "Authoritative KR crypto market-structure statistics.",
+      "ai_utility": "Reliable market-size grounding data; recurring biannual release.",
+      "interfaces": [
+        "web",
+        "pdf"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://www.fsc.go.kr/no010101/86534",
+        "https://fsc.go.kr/no010101/85419"
+      ]
+    },
+    {
+      "id": "kofiu-vasp-status",
+      "name": "KoFIU Registered VASP Status (가상자산사업자 신고현황)",
+      "url": "https://www.kofiu.go.kr/",
+      "category": "regulatory-data",
+      "publisher": "Korea Financial Intelligence Unit (금융정보분석원)",
+      "publisher_relation": "government",
+      "description": "Official list of registered virtual-asset service providers (VASPs) published by KoFIU as an XLSX on its VASP board (updated ~semiannually; latest 2026-06-30). The authoritative record of which Korean exchanges/custodians are legally registered.",
+      "description_ko": "금융정보분석원(KoFIU)이 VASP 게시판에 XLSX로 공개하는 신고 가상자산사업자 목록(약 반기마다 갱신, 최신 2026-06-30). 어떤 한국 거래소·수탁사가 합법적으로 신고되었는지에 대한 공식 기록.",
+      "korea_relevance": "Ground-truth for which Korean crypto operators are licensed — essential for compliance-aware agents.",
+      "ai_utility": "Official grounding dataset; note the XLSX is reached via the board (no stable static download URL — needs a browser session, not a bare GET).",
+      "interfaces": [
+        "xls",
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://www.kofiu.go.kr/",
+        "https://www.kofiu.go.kr/cmn/board/selectBoardListFile.do?seCd=0007"
+      ]
+    },
+    {
+      "id": "signalmap",
+      "name": "SignalMap",
+      "url": "https://signalmap.moss.land",
+      "category": "signal-pipelines",
+      "publisher": "Mossland",
+      "publisher_relation": "maintainer",
+      "description": "Multi-source narrative pipeline that collects and summarizes curated Korean YouTube commentary (plus news/macro), maps videos by perspective (same / different / observation), and emits a canonical store of channels, topics, and videos.",
+      "description_ko": "큐레이션된 한국 유튜브 논평(뉴스·매크로 포함)을 수집·요약하고 관점별(같은 방향/다른 방향/관찰)로 매핑해 채널·토픽·영상의 정규 저장소로 내보내는 다중 소스 내러티브 파이프라인.",
+      "korea_relevance": "Curates and structures Korean YouTube crypto/macro commentary that English-language tools don't index.",
+      "ai_utility": "Emits canonical topics/videos that downstream products (e.g. Alpha) and agents consume.",
+      "interfaces": [
+        "web"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "status_reason": "Homepage reports 82 channels while the /about page prose says '30 YouTubers' (stale copy). Crypto is one of several tracked topics, not the sole focus.",
+      "status_reason_ko": "홈페이지는 82개 채널로 표시하지만 /about 문구는 '유튜버 30명'이라고 함(오래된 문구). 암호화폐는 여러 추적 토픽 중 하나이며 유일한 초점이 아님.",
+      "affiliation": "mossland",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://signalmap.moss.land/",
+        "https://signalmap.moss.land/about"
+      ]
+    },
+    {
+      "id": "bithumb-ai-trade-kit",
+      "name": "Bithumb AI Trade Kit",
+      "url": "https://github.com/bithumb-official/bithumb-ai-trade-kit",
+      "category": "trading-agents",
+      "publisher": "Bithumb",
+      "publisher_relation": "official",
+      "description": "Official toolkit for AI agents to use the Bithumb API — market data, account queries, orders, deposits, and withdrawals — shipped as an MCP server, a terminal CLI, and Skills for Claude / Cursor / VS Code / Windsurf.",
+      "description_ko": "빗썸 API를 AI 에이전트가 사용하도록 만든 공식 툴킷 — 시세·계정 조회·주문·입출금. MCP 서버, 터미널 CLI, Claude/Cursor/VS Code/Windsurf용 Skills로 제공.",
+      "korea_relevance": "Direct agent access to a major Korean exchange.",
+      "ai_utility": "MCP / CLI / Skills — but R3 (orders + withdrawal). Require human confirmation and disable withdrawal where possible.",
+      "interfaces": [
+        "mcp",
+        "cli",
+        "skills"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "api-key",
+      "cost": "free",
+      "license": "MIT",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/bithumb-official/bithumb-ai-trade-kit"
+      ]
+    },
+    {
+      "id": "upbit-agent-skills",
+      "name": "Upbit Agent Skills",
+      "url": "https://github.com/upbit-official/upbit-agent-skills",
+      "category": "trading-agents",
+      "publisher": "Upbit",
+      "publisher_relation": "official",
+      "description": "Official Agent Skills for Upbit covering market data, balances, order placement, and deposits/withdrawals. Wires an AI agent directly to a live Upbit account.",
+      "description_ko": "시세·잔고·주문·입출금을 아우르는 업비트 공식 Agent Skills. AI 에이전트를 실계정에 직접 연결한다.",
+      "korea_relevance": "Direct agent access to the dominant Korean exchange.",
+      "ai_utility": "Ready-made Skills — but grants trade AND withdrawal. Treat as R3: use keys with withdrawal disabled and human-in-the-loop confirmation.",
+      "interfaces": [
+        "skills"
+      ],
+      "capabilities": [
+        "public-read",
+        "account-read",
+        "trade",
+        "withdrawal"
+      ],
+      "risk_class": "R3",
+      "auth": "api-key",
+      "cost": "free",
+      "status": "active",
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/upbit-official/upbit-agent-skills"
+      ]
+    },
+    {
+      "id": "upbit-strategy-toolkit",
+      "name": "Upbit Strategy Toolkit",
+      "url": "https://github.com/upbit-official/upbit-strategy-toolkit",
+      "category": "trading-agents",
+      "publisher": "Upbit",
+      "publisher_relation": "official",
+      "description": "Official toolkit to design and backtest Upbit trading strategies by chatting with an AI agent (Claude Code, Codex, Cursor). Backtest-only — no live-trading permissions required (beta, v0.8.1).",
+      "description_ko": "AI 에이전트(Claude Code, Codex, Cursor)와 대화하며 업비트 트레이딩 전략을 설계·백테스트하는 공식 툴킷. 백테스트 전용 — 실거래 권한 불필요(베타, v0.8.1).",
+      "korea_relevance": "Natural-language strategy design and backtesting over Upbit's KRW market history.",
+      "ai_utility": "Agent-native (Claude Code / Codex / Cursor); the backtest sandbox means no live-key risk.",
+      "interfaces": [
+        "cli",
+        "python"
+      ],
+      "capabilities": [
+        "public-read"
+      ],
+      "risk_class": "R0",
+      "cost": "free",
+      "status": "active",
+      "featured": true,
+      "last_verified_at": "2026-07-14",
+      "evidence_urls": [
+        "https://github.com/upbit-official/upbit-strategy-toolkit"
+      ]
+    }
+  ]
+}

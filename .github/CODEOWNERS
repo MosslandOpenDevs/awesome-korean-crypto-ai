@@ -1,0 +1,13 @@
+# Code owners — reviewers auto-requested on matching PRs.
+# Replace the placeholder below with real GitHub handles or a team that has write
+# access (e.g. @MosslandOpenDevs/maintainers). An owner that doesn't exist is simply
+# ignored by GitHub, so required-review protection won't work until this is set.
+
+# Data and schema changes are the highest-stakes — require curator review.
+# /data/            @MosslandOpenDevs/maintainers
+# /schema/          @MosslandOpenDevs/maintainers
+# /scripts/         @MosslandOpenDevs/maintainers
+# /.github/         @MosslandOpenDevs/maintainers
+
+# Everything else
+# *                 @MosslandOpenDevs/maintainers

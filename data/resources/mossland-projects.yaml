@@ -1,0 +1,23 @@
+id: mossland-projects
+name: Mossland Projects Timeline
+url: https://github.com/mossland/Projects
+category: disclosures
+publisher: Mossland
+publisher_relation: maintainer
+description: Index of projects Mossland has developed since 2018, with current service status.
+description_ko: 2018년부터 Mossland이 개발한 프로젝트 목록과 현재 서비스 상태.
+korea_relevance: History of a Korean crypto/AI project.
+ai_utility: Project inventory / status reference.
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+status_reason: Repository has no declared license.
+status_reason_ko: 저장소에 선언된 라이선스 없음.
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/mossland/Projects

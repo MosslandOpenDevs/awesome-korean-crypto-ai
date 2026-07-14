@@ -1,0 +1,24 @@
+id: upbit-strategy-toolkit
+name: Upbit Strategy Toolkit
+url: https://github.com/upbit-official/upbit-strategy-toolkit
+category: trading-agents
+publisher: Upbit
+publisher_relation: official
+description: Official toolkit to design and backtest Upbit trading strategies by chatting with an AI agent
+  (Claude Code, Codex, Cursor). Backtest-only — no live-trading permissions required (beta, v0.8.1).
+description_ko: AI 에이전트(Claude Code, Codex, Cursor)와 대화하며 업비트 트레이딩 전략을 설계·백테스트하는 공식 툴킷. 백테스트 전용 — 실거래
+  권한 불필요(베타, v0.8.1).
+korea_relevance: Natural-language strategy design and backtesting over Upbit's KRW market history.
+ai_utility: Agent-native (Claude Code / Codex / Cursor); the backtest sandbox means no live-key risk.
+interfaces:
+- cli
+- python
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+featured: true
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/upbit-official/upbit-strategy-toolkit

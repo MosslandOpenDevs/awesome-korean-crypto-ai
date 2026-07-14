@@ -1,0 +1,87 @@
+# Ordered category definitions. `order` controls section order in the generated README.
+# Each resource's `category` field must match one of these keys.
+# Categories with `appendix: true` render after the main list (e.g. interest disclosures).
+
+categories:
+  aggregators:
+    order: 1
+    title: Aggregators & Vertical Media
+    title_ko: 애그리게이터 & 버티컬 미디어
+    description: LLM-citable, structured surfaces that aggregate Korean crypto narratives.
+    description_ko: 한국 암호화폐 내러티브를 구조화해 LLM이 인용할 수 있게 만든 서비스.
+
+  signal-pipelines:
+    order: 2
+    title: Signal Pipelines & Datasets
+    title_ko: 시그널 파이프라인 & 데이터셋
+    description: Tools that ingest Korean creators / news / macro feeds and emit structured canonical data.
+    description_ko: 한국 크리에이터·뉴스·매크로 피드를 받아 정규화된 데이터로 내보내는 도구.
+
+  mcp-servers:
+    order: 3
+    title: MCP Servers (Korean Market)
+    title_ko: MCP 서버 (한국 시장)
+    description: Model Context Protocol servers exposing Korean-market data to MCP clients (Claude, Cursor, Cline, …).
+    description_ko: 한국 시장 데이터를 MCP 클라이언트(Claude, Cursor, Cline 등)에 노출하는 Model Context Protocol 서버.
+
+  exchange-apis:
+    order: 4
+    title: Exchange APIs
+    title_ko: 거래소 API
+    description: >-
+      Official REST/WebSocket APIs from Korean crypto exchanges. Their public market-data endpoints are
+      auth-free (R0), but the same credentialed API also places orders and moves funds — so each entry is
+      rated at its full capability (R3). Use the auth-free subset for data; scope your API keys carefully.
+    description_ko: >-
+      한국 암호화폐 거래소의 공식 REST/WebSocket API. 공개 시세 엔드포인트는 인증 불필요(R0)지만, 동일 API의 인증 엔드포인트가 주문·출금까지 수행하므로
+      각 항목은 최대 권한(R3) 기준으로 표기한다. 데이터는 인증 불필요 엔드포인트를 쓰고, API 키 권한은 신중히 설정할 것.
+
+  trading-agents:
+    order: 5
+    title: Exchange Trading Agents & Skills
+    title_ko: 거래소 트레이딩 에이전트 & 스킬
+    description: >-
+      Agent-facing kits (MCP / Skills / CLI) published by or for Korean exchanges. Many can place orders or move
+      funds — read the risk class and required permissions before wiring one to a live key.
+    description_ko: >-
+      한국 거래소가 배포하거나 거래소를 위해 만든 에이전트용 키트(MCP/Skills/CLI). 상당수가 주문·출금까지 수행할 수 있으므로,
+      실거래 키에 연결하기 전에 위험 등급과 필요한 권한을 반드시 확인할 것.
+
+  macro-data:
+    order: 6
+    title: Macro & Market Data APIs
+    title_ko: 매크로 & 시장 데이터 API
+    description: Official / freemium APIs for Korean macro indicators and market statistics.
+    description_ko: 한국 매크로 지표·시장 통계를 위한 공식/프리미엄 API.
+
+  regulatory-data:
+    order: 7
+    title: Regulatory & Compliance Data
+    title_ko: 규제 & 컴플라이언스 데이터
+    description: Official grounding data on registered operators and market structure — useful for compliance-aware agents.
+    description_ko: 신고 사업자·시장 구조에 관한 공식 근거 데이터. 컴플라이언스를 고려하는 에이전트에 유용.
+
+  onchain:
+    order: 8
+    title: On-Chain & Wallet Tooling
+    title_ko: 온체인 & 지갑 도구
+    description: Korean-market-relevant on-chain infrastructure and agent tooling.
+    description_ko: 한국 시장과 관련된 온체인 인프라 및 에이전트 도구.
+
+  media:
+    order: 9
+    title: Korean Crypto Media
+    title_ko: 한국 암호화폐 미디어
+    description: Korean-language crypto / blockchain news outlets.
+    description_ko: 한국어 암호화폐·블록체인 뉴스 매체.
+
+  disclosures:
+    order: 10
+    appendix: true
+    title: Maintainer-Affiliated Resources & Disclosures
+    title_ko: 메인테이너 관계 리소스 & 이해관계 공개
+    description: >-
+      Resources published by the maintainers of this catalog (the Mossland ecosystem), collected here for full
+      disclosure. They are listed for transparency, not as neutral recommendations.
+    description_ko: >-
+      이 카탈로그의 메인테이너(Mossland 생태계)가 발행한 리소스를 이해관계 공개 차원에서 모았다. 중립적 추천이 아니라 투명성을 위해 나열한다.

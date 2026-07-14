@@ -1,0 +1,29 @@
+id: krx-market-data
+name: KRX Market Data (Data Marketplace / OPEN API)
+url: https://data.krx.co.kr/
+category: macro-data
+publisher: Korea Exchange (한국거래소)
+publisher_relation: government
+description: 'Official Korea Exchange market data — daily OHLCV for KOSPI/KOSDAQ, ETF/ETN/ELW, bonds,
+  and derivatives (2010–). Free of charge but account-gated: full access and the OPEN API (openapi.krx.co.kr)
+  require a KRX account, terms agreement, and an approved auth key (issued ~1 day, valid 1 year).'
+description_ko: '한국거래소 공식 시장 데이터 — KOSPI/KOSDAQ, ETF/ETN/ELW, 채권·파생 일별 OHLCV(2010~). 무료지만 계정 필요: 전체 접근과
+  OPEN API(openapi.krx.co.kr)는 KRX 계정·약관 동의·승인된 인증키(약 1일 내 발급, 1년 유효) 필요.'
+korea_relevance: Authoritative KR equity/derivatives market data for cross-asset (KOSPI↔BTC) context.
+ai_utility: Structured market data, but registration-gated and non-commercial-only (may not resell or
+  charge third parties for results).
+interfaces:
+- rest
+- openapi
+- web
+capabilities:
+- public-read
+risk_class: R0
+auth: registration
+cost: registration-required
+terms_url: https://openapi.krx.co.kr/contents/OPP/INFO/OPPINFO002.jsp
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://data.krx.co.kr/
+- https://openapi.krx.co.kr/

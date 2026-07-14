@@ -1,0 +1,31 @@
+id: bithumb-ai-trade-kit
+name: Bithumb AI Trade Kit
+url: https://github.com/bithumb-official/bithumb-ai-trade-kit
+category: trading-agents
+publisher: Bithumb
+publisher_relation: official
+description: Official toolkit for AI agents to use the Bithumb API — market data, account queries, orders,
+  deposits, and withdrawals — shipped as an MCP server, a terminal CLI, and Skills for Claude / Cursor
+  / VS Code / Windsurf.
+description_ko: 빗썸 API를 AI 에이전트가 사용하도록 만든 공식 툴킷 — 시세·계정 조회·주문·입출금. MCP 서버, 터미널 CLI, Claude/Cursor/VS Code/Windsurf용
+  Skills로 제공.
+korea_relevance: Direct agent access to a major Korean exchange.
+ai_utility: MCP / CLI / Skills — but R3 (orders + withdrawal). Require human confirmation and disable
+  withdrawal where possible.
+interfaces:
+- mcp
+- cli
+- skills
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: api-key
+cost: free
+license: MIT
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/bithumb-official/bithumb-ai-trade-kit

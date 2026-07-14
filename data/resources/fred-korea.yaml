@@ -1,0 +1,27 @@
+id: fred-korea
+name: FRED — Korea, Republic of (South Korea)
+url: https://fred.stlouisfed.org/categories/32286
+category: macro-data
+publisher: Federal Reserve Bank of St. Louis
+publisher_relation: government
+description: St. Louis Fed's FRED category for South Korea (category 32286) — mirrored Korean macro series
+  (rates, FX, prices, national accounts). Free API key. (The previous list linked 32263, which is the
+  'International Data' parent category, not Korea.)
+description_ko: 세인트루이스 연은 FRED의 대한민국 카테고리(32286) — 한국 매크로 시계열(금리·환율·물가·국민계정) 미러. 무료 API 키. (기존 목록의 32263은
+  한국이 아니라 'International Data' 상위 카테고리였음.)
+korea_relevance: English-labeled Korean macro series, convenient for cross-country agents.
+ai_utility: Well-documented REST API with stable series IDs.
+interfaces:
+- rest
+- csv
+- json
+capabilities:
+- public-read
+risk_class: R0
+auth: api-key
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://fred.stlouisfed.org/categories/32286
+- https://fred.stlouisfed.org/categories/32263

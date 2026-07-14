@@ -1,0 +1,27 @@
+id: kofiu-vasp-status
+name: KoFIU Registered VASP Status (가상자산사업자 신고현황)
+url: https://www.kofiu.go.kr/
+category: regulatory-data
+publisher: Korea Financial Intelligence Unit (금융정보분석원)
+publisher_relation: government
+description: Official list of registered virtual-asset service providers (VASPs) published by KoFIU as
+  an XLSX on its VASP board (updated ~semiannually; latest 2026-06-30). The authoritative record of which
+  Korean exchanges/custodians are legally registered.
+description_ko: 금융정보분석원(KoFIU)이 VASP 게시판에 XLSX로 공개하는 신고 가상자산사업자 목록(약 반기마다 갱신, 최신 2026-06-30). 어떤 한국 거래소·수탁사가
+  합법적으로 신고되었는지에 대한 공식 기록.
+korea_relevance: Ground-truth for which Korean crypto operators are licensed — essential for compliance-aware
+  agents.
+ai_utility: Official grounding dataset; note the XLSX is reached via the board (no stable static download
+  URL — needs a browser session, not a bare GET).
+interfaces:
+- xls
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://www.kofiu.go.kr/
+- https://www.kofiu.go.kr/cmn/board/selectBoardListFile.do?seCd=0007

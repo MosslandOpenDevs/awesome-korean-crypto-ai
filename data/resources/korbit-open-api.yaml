@@ -1,0 +1,38 @@
+id: korbit-open-api
+name: Korbit Open API
+url: https://docs.korbit.co.kr/
+category: exchange-apis
+publisher: Korbit
+publisher_relation: official
+description: Official API (v2) for Korbit, Korea's oldest crypto exchange. REST + WebSocket, public quotation
+  endpoints plus private account/order/deposit/withdrawal. Notably AI-agent-oriented — ships an llms.txt
+  / llms-full.txt, an MCP server, and an official Go CLI (korbit-cli).
+description_ko: 국내 최초 거래소 코빗의 공식 API(v2). REST + 웹소켓, 공개 시세 및 프라이빗 계정·주문·입출금. AI 에이전트 지향 — llms.txt /
+  llms-full.txt, MCP 서버, 공식 Go CLI(korbit-cli) 제공.
+korea_relevance: KRW market-data and trading API from a long-standing Korean exchange, filling a gap in
+  the previous list.
+ai_utility: Purpose-built for agents (llms.txt, MCP, CLI). Public endpoints R0; private endpoints span
+  R1–R3 (HMAC-SHA256 or Ed25519 keys) and include withdrawal.
+interfaces:
+- rest
+- websocket
+- llms-txt
+- mcp
+- cli
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: mixed
+cost: free
+status: active
+status_reason: GitHub org korbit-official is GitHub-verified but new (created 2026-06); the CLI/MCP tooling
+  is freshly launched rather than battle-tested.
+status_reason_ko: GitHub 조직 korbit-official은 GitHub 인증되었으나 신규(2026-06 생성); CLI/MCP 도구는 검증된 것이 아니라 갓 출시됨.
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://docs.korbit.co.kr/
+- https://docs.korbit.co.kr/llms.txt
+- https://github.com/korbit-official/korbit-cli

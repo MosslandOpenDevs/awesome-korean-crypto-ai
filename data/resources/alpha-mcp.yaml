@@ -1,0 +1,33 @@
+id: alpha-mcp
+name: Alpha MCP (land.moss/alpha-mcp)
+url: https://github.com/MosslandOpenDevs/alpha-mcp
+category: mcp-servers
+publisher: Mossland
+publisher_relation: maintainer
+description: Remote MCP server exposing ~12 tools over alpha.moss.land — search Korean YouTube channel
+  stance, daily AI briefs, a canonical entity/topic/event store, a KR macro snapshot (BOK ECOS + FRED),
+  and the disclosed AI-persona directory. Streamable-HTTP, no auth.
+description_ko: alpha.moss.land 위에 약 12개 도구를 노출하는 원격 MCP 서버 — 한국 유튜브 채널 스탠스 검색, AI 브리핑, 엔티티/토픽/이벤트 저장소,
+  KR 매크로 스냅샷(BOK ECOS + FRED), AI 페르소나 디렉터리. Streamable-HTTP, 인증 불필요.
+korea_relevance: Puts Korean-market narrative + macro data behind a standard MCP interface for Claude
+  / Cursor / Cline / Continue / Zed.
+ai_utility: Listed in the official MCP registry under a DNS-verified namespace — note the registry is
+  self-publishing, not an editorial endorsement.
+interfaces:
+- mcp
+capabilities:
+- public-read
+risk_class: R0
+auth: none
+cost: free
+license: MIT
+status: watch
+status_reason: Depends on the alpha.moss.land upstream, a degraded beta — some tools (e.g. list_topics,
+  list_events) currently return empty results.
+status_reason_ko: '저하된 베타인 alpha.moss.land 업스트림에 의존 — 일부 도구(예: list_topics, list_events)가 현재 빈 결과를 반환.'
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/MosslandOpenDevs/alpha-mcp
+- https://registry.modelcontextprotocol.io/v0/servers?search=moss
+- https://alpha.moss.land/api/mcp

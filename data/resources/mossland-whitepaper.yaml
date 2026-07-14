@@ -1,0 +1,21 @@
+id: mossland-whitepaper
+name: Mossland Whitepaper v3.1
+url: https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+(v3.1).pdf
+category: disclosures
+publisher: Mossland
+publisher_relation: maintainer
+description: Mossland project whitepaper (v3.1), bilingual EN/KO.
+description_ko: Mossland 프로젝트 백서(v3.1), 영/한 이중언어.
+korea_relevance: Documentation for a Korean crypto/AI project.
+ai_utility: Background/context document (PDF).
+interfaces:
+- pdf
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+(v3.1).pdf

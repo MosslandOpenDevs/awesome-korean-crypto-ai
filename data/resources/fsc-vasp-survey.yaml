@@ -1,0 +1,25 @@
+id: fsc-vasp-survey
+name: FSC Virtual-Asset Market Survey (가상자산사업자 실태조사)
+url: https://www.fsc.go.kr/no010101/86534
+category: regulatory-data
+publisher: Financial Services Commission (금융위원회) / FIU
+publisher_relation: government
+description: Semiannual official survey of Korea's licensed VASPs by the FSC/FIU — market cap, trading
+  volume, KRW deposits, account counts, listings, and operating profit. The H2-2025 edition (all 27 licensed
+  VASPs) was published 2026-03-25.
+description_ko: 금융위원회/FIU가 반기마다 발표하는 국내 신고 가상자산사업자 실태조사 — 시가총액·거래량·원화예치금·이용자 수·상장 종목·영업이익. 2025년 하반기판(신고사업자
+  27곳)은 2026-03-25 발표.
+korea_relevance: Authoritative KR crypto market-structure statistics.
+ai_utility: Reliable market-size grounding data; recurring biannual release.
+interfaces:
+- web
+- pdf
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://www.fsc.go.kr/no010101/86534
+- https://fsc.go.kr/no010101/85419

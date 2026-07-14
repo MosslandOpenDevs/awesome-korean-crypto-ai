@@ -1,0 +1,21 @@
+id: block-media
+name: Block Media (블록미디어)
+url: https://www.blockmedia.co.kr/
+category: media
+publisher: Block Media
+publisher_relation: community
+description: Korean blockchain/crypto news outlet (self-styled 'No.1 blockchain news') covering digital-finance
+  policy, industry, research, and markets.
+description_ko: 디지털 금융 정책·산업·리서치·시장을 다루는 한국 블록체인/암호화폐 뉴스 매체('No.1 블록체인 뉴스' 표방).
+korea_relevance: Korean-language crypto news source.
+ai_utility: Fresh KR narrative text for retrieval.
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://www.blockmedia.co.kr/

@@ -1,0 +1,30 @@
+id: upbit-open-api
+name: Upbit Open API
+url: https://docs.upbit.com/
+category: exchange-apis
+publisher: Upbit (Dunamu)
+publisher_relation: official
+description: Official API for Upbit, Korea's largest crypto exchange by domestic volume (~72% share).
+  KRW-pair ticker, candles, orderbook, and WebSocket. Public market-data endpoints need no auth; authenticated
+  endpoints add balances, order placement, and withdrawal.
+description_ko: 국내 거래대금 1위(약 72%) 거래소 업비트의 공식 API. KRW 페어 시세·캔들·오더북·웹소켓. 공개 시세 엔드포인트는 인증 불필요, 인증 엔드포인트는
+  잔고·주문·출금까지 제공.
+korea_relevance: Primary KRW market-data and trading API for the dominant Korean exchange.
+ai_utility: Auth-free public endpoints are ideal LLM/agent data sources; note private endpoints reach
+  R3 (withdrawal) once keyed.
+interfaces:
+- rest
+- websocket
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: mixed
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://docs.upbit.com/
+- https://api.upbit.com/v1/ticker?markets=KRW-BTC

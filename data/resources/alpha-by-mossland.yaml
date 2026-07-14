@@ -1,0 +1,35 @@
+id: alpha-by-mossland
+name: Alpha by Mossland
+url: https://alpha.moss.land
+category: aggregators
+publisher: Mossland
+publisher_relation: maintainer
+description: Korean crypto × AI vertical-media surface — channel-level stance distribution, AI-synthesized
+  daily briefs, retrievable RAG Q&A, and a directory of disclosed AI personas, built on Korean YouTube
+  + news + macro feeds.
+description_ko: 한국 암호화폐 × AI 버티컬 미디어 — 채널별 스탠스 분포, AI 데일리 브리핑, RAG Q&A, 공개된 AI 페르소나 디렉터리. 한국 유튜브·뉴스·매크로
+  피드 기반.
+korea_relevance: Aggregates Korean-language crypto/macro narratives (YouTube, news, KR macro) into an
+  LLM-citable surface.
+ai_utility: RAG Q&A plus a structured entity/topic/event store agents can query; paired with an MCP server
+  (see alpha-mcp).
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+license: MIT
+status: watch
+status_reason: Live beta — the homepage entity/topic/event counters render 0 while the /ask backend reports
+  populated data, and the AI-personas feature self-declares pre-launch ('Phase 1.2, catalog-only'). Verify
+  current state before citing figures.
+status_reason_ko: 라이브 베타 — 홈페이지의 엔티티/토픽/이벤트 카운터는 0으로 표시되지만 /ask 백엔드에는 데이터가 채워져 있고, AI 페르소나 기능은 사전 출시('Phase
+  1.2, 카탈로그만')를 스스로 명시. 수치를 인용하기 전 현재 상태 확인 필요.
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://alpha.moss.land/
+- https://alpha.moss.land/ask
+- https://alpha.moss.land/agents
+- https://github.com/MosslandOpenDevs/alpha
