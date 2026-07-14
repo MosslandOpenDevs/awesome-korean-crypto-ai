@@ -1,0 +1,22 @@
+id: mossland-disclosures
+name: Mossland Disclosures
+url: https://disclosure.moss.land/
+category: disclosures
+publisher: Mossland
+publisher_relation: maintainer
+description: Mossland project disclosure dashboard — MOC token supply schedule, circulating supply, on-chain/DAO
+  activity, and a materials log (client-rendered SPA pulling live market data).
+description_ko: Mossland 프로젝트 공시 대시보드 — MOC 토큰 공급 스케줄, 유통량, 온체인/DAO 활동, 자료 로그(라이브 시장 데이터를 불러오는 SPA).
+korea_relevance: Transparency data for a Korean crypto/AI project.
+ai_utility: Structured disclosure data (served via its /api/disclosure endpoint).
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://disclosure.moss.land/

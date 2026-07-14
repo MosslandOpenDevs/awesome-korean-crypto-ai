@@ -1,0 +1,29 @@
+id: coinone-api
+name: Coinone API
+url: https://docs.coinone.co.kr/
+category: exchange-apis
+publisher: Coinone
+publisher_relation: official
+description: Official API for Coinone, a Korean KRW exchange (~10% domestic share). Public ticker/orderbook
+  endpoints need no auth; private endpoints add balances, orders, and withdrawal. Ships an llms.txt.
+description_ko: KRW 거래소 코인원(국내 점유율 약 10%)의 공식 API. 공개 시세·오더북 엔드포인트는 인증 불필요, 프라이빗 엔드포인트는 잔고·주문·출금 제공. llms.txt
+  제공.
+korea_relevance: Third major KRW exchange; complements Upbit/Bithumb market data.
+ai_utility: Auth-free public endpoints plus an llms.txt; private endpoints reach R3 once keyed.
+interfaces:
+- rest
+- websocket
+- llms-txt
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: mixed
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://docs.coinone.co.kr/
+- https://docs.coinone.co.kr/llms.txt

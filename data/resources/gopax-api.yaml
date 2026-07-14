@@ -1,0 +1,26 @@
+id: gopax-api
+name: GOPAX API
+url: https://gopax.github.io/API/
+category: exchange-apis
+publisher: GOPAX (Streami)
+publisher_relation: official
+description: Official REST API for GOPAX, a Korean KRW exchange. Public endpoints are usable without authentication;
+  private (keyed) endpoints add account, trading, and withdrawal. Docs maintained since 2017.
+description_ko: KRW 거래소 고팍스의 공식 REST API. 공개 엔드포인트는 인증 없이 사용 가능, 프라이빗(키) 엔드포인트는 계정·거래·출금 제공. 2017년부터 유지되는
+  문서.
+korea_relevance: Additional KRW exchange market data.
+ai_utility: Auth-free public endpoints; private endpoints reach R3 once keyed.
+interfaces:
+- rest
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: mixed
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://gopax.github.io/API/

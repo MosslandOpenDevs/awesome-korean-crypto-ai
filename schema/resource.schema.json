@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/schema/resource.schema.json",
+  "title": "Korean Crypto x AI Catalog Resource",
+  "description": "One resource = one file under data/resources/*.yaml. Every field is machine-checked by scripts/validate.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "url",
+    "category",
+    "publisher",
+    "publisher_relation",
+    "description",
+    "korea_relevance",
+    "ai_utility",
+    "risk_class",
+    "cost",
+    "status",
+    "last_verified_at",
+    "evidence_urls"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Stable kebab-case identifier. Must match the filename (without .yaml) and be globally unique."
+    },
+    "name": { "type": "string", "minLength": 2, "maxLength": 80 },
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Must be a key defined in data/categories.yaml."
+    },
+    "publisher": { "type": "string", "minLength": 1 },
+    "publisher_relation": {
+      "type": "string",
+      "enum": ["official", "government", "community", "maintainer"],
+      "description": "official = run by the entity it represents (e.g. an exchange's own repo); government = public-sector body; community = third party; maintainer = affiliated with this catalog's maintainers (must be disclosed)."
+    },
+    "description": { "type": "string", "minLength": 10, "maxLength": 320 },
+    "description_ko": { "type": "string", "maxLength": 400 },
+    "korea_relevance": { "type": "string", "minLength": 4, "maxLength": 240 },
+    "ai_utility": { "type": "string", "minLength": 4, "maxLength": 240 },
+    "interfaces": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["mcp", "skills", "cli", "rest", "websocket", "openapi", "graphql", "llms-txt", "python", "csv", "xls", "json", "rss", "web", "pdf"]
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["public-read", "account-read", "trade", "withdrawal", "transfer"]
+      },
+      "description": "What an agent can actually DO through this resource. Drives risk_class."
+    },
+    "risk_class": {
+      "type": "string",
+      "enum": ["R0", "R1", "R2", "R3"],
+      "description": "R0 public read; R1 authenticated account read; R2 places/cancels orders; R3 moves funds (withdrawal/transfer)."
+    },
+    "auth": {
+      "type": "string",
+      "enum": ["none", "api-key", "hmac", "ed25519", "oauth", "registration", "mixed"]
+    },
+    "cost": {
+      "type": "string",
+      "enum": ["free", "freemium", "registration-required", "paid"]
+    },
+    "license": { "type": "string" },
+    "terms_url": { "type": "string", "pattern": "^https?://" },
+    "status": {
+      "type": "string",
+      "enum": ["active", "watch", "deprecated", "archived"],
+      "description": "active = verified working; watch = degraded/uncertain, under observation; deprecated = superseded; archived = kept for history only."
+    },
+    "status_reason": { "type": "string", "maxLength": 400 },
+    "status_reason_ko": { "type": "string", "maxLength": 500 },
+    "affiliation": {
+      "type": "string",
+      "description": "Set when the resource is affiliated with the catalog maintainers (e.g. 'mossland'). Required whenever publisher_relation = maintainer."
+    },
+    "featured": { "type": "boolean" },
+    "last_verified_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "ISO date (YYYY-MM-DD) a human last confirmed the facts in this entry."
+    },
+    "evidence_urls": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^https?://" },
+      "description": "One or more URLs that substantiate the claims in this entry."
+    }
+  }
+}

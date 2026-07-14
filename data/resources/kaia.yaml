@@ -1,0 +1,25 @@
+id: kaia
+name: Kaia
+url: https://github.com/kaiachain/kaia
+category: onchain
+publisher: Kaia Foundation
+publisher_relation: official
+description: Public EVM-compatible L1 blockchain formed by the Klaytn (Kakao's Ground X) × Finschia merger.
+  Kaia is the active successor to the archived klaytn/klaytn repository.
+description_ko: 클레이튼(카카오 Ground X) × 핀시아 합병으로 만들어진 퍼블릭 EVM 호환 L1 블록체인. 아카이브된 klaytn/klaytn 저장소의 현행 후속.
+korea_relevance: The major Korea-originated L1 (Kakao lineage); relevant for KR-focused on-chain agents.
+ai_utility: Standard EVM tooling; see the Kaia Agent Kit for agent integrations.
+interfaces:
+- json
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+license: LGPL-3.0
+status: active
+status_reason: Replaces the archived klaytn/klaytn repo (archived 2024-08).
+status_reason_ko: 아카이브된 klaytn/klaytn 저장소를 대체(2024-08 아카이브).
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/kaiachain/kaia
+- https://github.com/klaytn/klaytn

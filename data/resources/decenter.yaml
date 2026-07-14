@@ -1,0 +1,22 @@
+id: decenter
+name: Decenter (디센터)
+url: https://www.decenter.kr/
+category: media
+publisher: Seoul Economic Daily (서울경제)
+publisher_relation: community
+description: Korean crypto/blockchain news hub run by Seoul Economic Daily, with real-time price tickers
+  and coverage of tokenization, stablecoins, and policy.
+description_ko: 서울경제가 운영하는 한국 암호화폐/블록체인 뉴스 허브. 실시간 시세와 토큰화·스테이블코인·정책 보도.
+korea_relevance: Korean-language crypto news source backed by a major business daily.
+ai_utility: Fresh KR narrative text for retrieval.
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://www.decenter.kr/
+- https://decenter.kr/

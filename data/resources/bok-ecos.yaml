@@ -1,0 +1,28 @@
+id: bok-ecos
+name: BOK ECOS
+url: https://ecos.bok.or.kr/api/
+category: macro-data
+publisher: Bank of Korea
+publisher_relation: government
+description: Bank of Korea Economic Statistics System open API — base rate, government-bond yields, USD/KRW,
+  CPI, M2, national accounts, balance of payments (834 tables, 100+ key indicators). Free auth key (auto-issued
+  on signup); a 'sample' key works for testing.
+description_ko: 한국은행 경제통계시스템(ECOS) 공개 API — 기준금리, 국고채 금리, 원/달러, CPI, M2, 국민계정, 국제수지(834개 통계표, 100+ 주요지표).
+  가입 시 자동 발급되는 무료 인증키(테스트는 'sample' 키).
+korea_relevance: Authoritative Korean macro/monetary time series — the macro backbone for KOSPI↔BTC and
+  kimchi-premium context.
+ai_utility: Clean REST/JSON for grounding agents in current KR macro (verified serving today's data).
+interfaces:
+- rest
+- json
+capabilities:
+- public-read
+risk_class: R0
+auth: registration
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://ecos.bok.or.kr/
+- https://ecos.bok.or.kr/api/
+- https://ecos.bok.or.kr/api/KeyStatisticList/sample/json/kr/1/3/

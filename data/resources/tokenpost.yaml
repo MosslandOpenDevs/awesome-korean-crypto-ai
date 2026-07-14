@@ -1,0 +1,21 @@
+id: tokenpost
+name: The Token Post (토큰포스트)
+url: https://www.tokenpost.kr/
+category: media
+publisher: TokenPost
+publisher_relation: community
+description: Korean blockchain/crypto news media ('Korea's No.1') with market data, an academy, and airdrop
+  sections.
+description_ko: 시장 데이터·아카데미·에어드롭 섹션을 갖춘 한국 블록체인/암호화폐 뉴스 매체('대한민국 No.1').
+korea_relevance: Korean-language crypto news source.
+ai_utility: Fresh KR narrative text for retrieval.
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://www.tokenpost.kr/

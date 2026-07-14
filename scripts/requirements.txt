@@ -1,0 +1,5 @@
+# Pinned so CI is reproducible. Bump deliberately.
+# validate.py needs PyYAML (jsonschema optional but used in CI for stricter checks);
+# build.py and check_links.py need only PyYAML.
+PyYAML==6.0.3
+jsonschema==4.26.0

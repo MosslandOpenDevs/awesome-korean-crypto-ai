@@ -1,0 +1,27 @@
+id: kaia-agent-kit
+name: Kaia Agent Kit
+url: https://github.com/kaiachain/kaia-agent-kit
+category: onchain
+publisher: Kaia Foundation
+publisher_relation: official
+description: TypeScript toolkit for building AI agents on Kaia — plugin-based on-chain queries (Kaiascan),
+  DEX (DragonSwap) integration, and Web3 token transfers.
+description_ko: Kaia 위에서 AI 에이전트를 만드는 TypeScript 툴킷 — 플러그인 기반 온체인 조회(Kaiascan), DEX(DragonSwap) 연동, Web3
+  토큰 전송.
+korea_relevance: Agent tooling for the Korea-originated Kaia chain.
+ai_utility: On-chain query + token-transfer plugins for agents; transfer capability makes it R3 (needs
+  a wallet key).
+capabilities:
+- public-read
+- transfer
+risk_class: R3
+cost: free
+license: MIT
+status: watch
+status_reason: Last significant commit 2025-10 (last release v0.0.16, Apr 2025); README has incomplete/broken
+  links. Token-transfer capable (R3) — needs a wallet key.
+status_reason_ko: 마지막 주요 커밋 2025-10(마지막 릴리스 v0.0.16, 2025-04); README에 미완성/깨진 링크 존재. 토큰 전송 가능(R3) — 지갑
+  키 필요.
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/kaiachain/kaia-agent-kit

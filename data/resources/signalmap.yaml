@@ -1,0 +1,30 @@
+id: signalmap
+name: SignalMap
+url: https://signalmap.moss.land
+category: signal-pipelines
+publisher: Mossland
+publisher_relation: maintainer
+description: Multi-source narrative pipeline that collects and summarizes curated Korean YouTube commentary
+  (plus news/macro), maps videos by perspective (same / different / observation), and emits a canonical
+  store of channels, topics, and videos.
+description_ko: 큐레이션된 한국 유튜브 논평(뉴스·매크로 포함)을 수집·요약하고 관점별(같은 방향/다른 방향/관찰)로 매핑해 채널·토픽·영상의 정규 저장소로 내보내는 다중
+  소스 내러티브 파이프라인.
+korea_relevance: Curates and structures Korean YouTube crypto/macro commentary that English-language tools
+  don't index.
+ai_utility: Emits canonical topics/videos that downstream products (e.g. Alpha) and agents consume.
+interfaces:
+- web
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+status: active
+status_reason: Homepage reports 82 channels while the /about page prose says '30 YouTubers' (stale copy).
+  Crypto is one of several tracked topics, not the sole focus.
+status_reason_ko: 홈페이지는 82개 채널로 표시하지만 /about 문구는 '유튜버 30명'이라고 함(오래된 문구). 암호화폐는 여러 추적 토픽 중 하나이며 유일한 초점이
+  아님.
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://signalmap.moss.land/
+- https://signalmap.moss.land/about

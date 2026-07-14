@@ -1,0 +1,30 @@
+id: mossland-moc-contract
+name: Moss Coin (MOC) ERC-20 Contract
+url: https://github.com/mossland/MossCoin-ERC20-2025
+category: disclosures
+publisher: Mossland
+publisher_relation: maintainer
+description: Mossland's own Moss Coin (MOC) ERC-20 (2025) token contract — a standard OpenZeppelin ERC-20
+  with Burnable, Permit (EIP-2612), and Votes (ERC20Votes), fixed 500M supply, deployed ownerless to Ethereum
+  mainnet. Audited by CertiK (Skynet), Aug 2025.
+description_ko: Mossland 자체 Moss Coin(MOC) ERC-20(2025) 토큰 컨트랙트 — OpenZeppelin 표준 ERC-20(Burnable, Permit(EIP-2612),
+  Votes(ERC20Votes)), 5억 고정 발행, 소유자 없이 이더리움 메인넷 배포. CertiK(Skynet) 감사(2025-08).
+korea_relevance: The token contract of a Korean crypto/AI project (this catalog's maintainer).
+ai_utility: Reference ERC-20 with governance/permit extensions.
+capabilities:
+- public-read
+risk_class: R0
+cost: free
+license: MIT
+status: active
+status_reason: Not general-purpose 'on-chain tooling' — it is Mossland's single-project token contract.
+  The CertiK audit is linked (not hosted in-repo) and reported one centralization finding marked 'Partially
+  Resolved'.
+status_reason_ko: 범용 '온체인 도구'가 아니라 Mossland 단일 프로젝트의 토큰 컨트랙트. CertiK 감사는 링크만 제공(리포에 미포함)되며 '부분 해결(Partially
+  Resolved)'로 표시된 중앙화 관련 지적 1건 존재.
+affiliation: mossland
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/mossland/MossCoin-ERC20-2025
+- https://skynet.certik.com/projects/mossland
+- https://etherscan.io/token/0x8bbfe65e31b348cd823c62e02ad8c19a84dd0dab

@@ -1,0 +1,26 @@
+id: upbit-agent-skills
+name: Upbit Agent Skills
+url: https://github.com/upbit-official/upbit-agent-skills
+category: trading-agents
+publisher: Upbit
+publisher_relation: official
+description: Official Agent Skills for Upbit covering market data, balances, order placement, and deposits/withdrawals.
+  Wires an AI agent directly to a live Upbit account.
+description_ko: 시세·잔고·주문·입출금을 아우르는 업비트 공식 Agent Skills. AI 에이전트를 실계정에 직접 연결한다.
+korea_relevance: Direct agent access to the dominant Korean exchange.
+ai_utility: 'Ready-made Skills — but grants trade AND withdrawal. Treat as R3: use keys with withdrawal
+  disabled and human-in-the-loop confirmation.'
+interfaces:
+- skills
+capabilities:
+- public-read
+- account-read
+- trade
+- withdrawal
+risk_class: R3
+auth: api-key
+cost: free
+status: active
+last_verified_at: '2026-07-14'
+evidence_urls:
+- https://github.com/upbit-official/upbit-agent-skills
