@@ -1,4 +1,12 @@
-# Awesome Korean Crypto × AI [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) [![quality](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml) [![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)
+# Awesome Korean Crypto × AI
+
+<!-- opendevs-badges:start -->
+[![CI](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-64748b?style=flat)](LICENSE)
+<!-- opendevs-badges:end -->
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+[![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)
 
 > A **verifiable** catalog of Korean crypto × AI resources — channels, tools, MCP servers, datasets, macro feeds, and aggregators that LLMs and agents can plug into.
 

@@ -1,4 +1,12 @@
-# Awesome Korean Crypto × AI [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) [![quality](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml) [![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)
+# Awesome Korean Crypto × AI
+
+<!-- opendevs-badges:start -->
+[![CI](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-64748b?style=flat)](LICENSE)
+<!-- opendevs-badges:end -->
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+[![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)
 
 > 한국 암호화폐 × AI 리소스를 **검증 가능한** 형태로 모은 카탈로그 — LLM과 에이전트가 바로 연결할 수 있는 채널·도구·MCP 서버·데이터셋·매크로 피드·애그리게이터.
 

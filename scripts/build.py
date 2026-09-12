@@ -183,12 +183,20 @@ def build_readme(resources, categories, today: str, ko: bool) -> str:
     _disc_title = _disc.get("title_ko") if ko and _disc.get("title_ko") else _disc.get("title", "Disclosures")
     disc_anchor = anchor(_disc_title)
 
-    badges = ("[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) "
-              "[![quality](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml) "
-              "[![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)")
+    badges = (
+        '<!-- opendevs-badges:start -->\n'
+        '[![CI](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/quality.yml)\n'
+        '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-64748b?style=flat)](LICENSE)\n'
+        '<!-- opendevs-badges:end -->\n'
+        '\n'
+        '[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)\n'
+        '[![health](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml/badge.svg)](https://github.com/MosslandOpenDevs/awesome-korean-crypto-ai/actions/workflows/health.yml)'
+    )
 
     if ko:
-        L.append(f"# Awesome Korean Crypto × AI {badges}")
+        L.append("# Awesome Korean Crypto × AI")
+        L.append("")
+        L.append(badges)
         L.append("")
         L.append("> 한국 암호화폐 × AI 리소스를 **검증 가능한** 형태로 모은 카탈로그 — LLM과 에이전트가 바로 연결할 수 있는 채널·도구·MCP 서버·데이터셋·매크로 피드·애그리게이터.")
         L.append("")
@@ -200,7 +208,9 @@ def build_readme(resources, categories, today: str, ko: bool) -> str:
         L.append("")
         L.append(stats_block(resources, ko=True) + f" · 스냅샷 {today}")
     else:
-        L.append(f"# Awesome Korean Crypto × AI {badges}")
+        L.append("# Awesome Korean Crypto × AI")
+        L.append("")
+        L.append(badges)
         L.append("")
         L.append("> A **verifiable** catalog of Korean crypto × AI resources — channels, tools, MCP servers, datasets, macro feeds, and aggregators that LLMs and agents can plug into.")
         L.append("")
